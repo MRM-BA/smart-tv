@@ -5,7 +5,7 @@ var gulp   = require('gulp');
 
 
 gulp.task('jshint', function() {
-    return gulp.src(['./app.js','./app/**/*.js','./gulp/**/*.js','./models/*.js'])
+    return gulp.src(['./app.js','./app/**/*.js','./gulp/**/*.js','./models/*.js','./config/*.js'])
         .pipe(jshint('.jshintrc'))
         .pipe(jshint.reporter('jshint-stylish'));
 });

@@ -1,3 +1,5 @@
+'use strict';
+
 var CronJob = require('cron').CronJob;
 var job = new CronJob('0 0 0 * * *', function(){
         console.log('execute');
@@ -8,3 +10,5 @@ var job = new CronJob('0 0 0 * * *', function(){
     true,
     'America/Buenos_Aires'
 );
+
+job.start();
